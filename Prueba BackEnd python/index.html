@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Back-End ISAAC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+</head>
+<body>
+ 
+    <div id="titulo">
+        <h1>PRUEBA BACKEND - ISAAC</h1>
+    </div>
+    
+<div style="color: white;">
+    <py-script>
+            from urllib.request import urlopen
+            import json
+            import urllib.request
+    
+            url = "https://prueba-backend-3258e-default-rtdb.firebaseio.com/estados.json"
+    
+            datos = urlopen(url)
+    
+            usuario = json.loads(datos.read())
+    
+            print(usuario)
+    </py-script>
+</div>
+    
+
+    <div id="container_body">
+        <div class="container" >
+            <div id="d_estado">ESTADOS: </div>
+            <select name="" id="">
+                <option>Seleccione un estado</option>
+            </select> <br>
+            <div id="d_mnpio">MUNICIPIO: </div>
+            <select name="" id="">
+                <option>Seleccione un municipio</option>
+            </select> <br>
+            <div id="d_asenta">COLONIA: </div>
+            <select name="" id="">
+                <option>Seleccione una colonia</option>
+            </select>
+        </div><br>
+        
+        <button id="boton" onclick="alerta()">BUSCAR</button>
+    </div>
+
+    <script>
+        function alerta(){
+            alert("El sitio aun no esta terminado")
+        }
+    </script>
+
+</body>
+</html>

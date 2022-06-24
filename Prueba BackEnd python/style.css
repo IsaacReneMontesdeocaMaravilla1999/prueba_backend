@@ -1,0 +1,88 @@
+body{
+    background-image: url(imagen\ de\ fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+}
+
+#titulo{
+    background: linear-gradient(#007bbf, #007b);
+    border: black 2px solid;
+    width: 100%;
+    height: 50%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container_body{
+    background: linear-gradient(gold, rgb(197, 46, 71));
+    height: 50vh;
+    margin: 1%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin: 0 auto;
+}
+
+.container div{
+    color: black;
+    box-sizing: border-box;
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+    margin: 0.5rem;
+    height: 20%;
+}
+
+input{
+    margin-top: 5px
+}
+
+#boton {
+    background-color: #ce0000; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#boton:hover {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #860101
+}
+
+#boton:hover {
+    background-color: rgb(1, 2, 63); 
+    color: rgb(255, 255, 255); 
+    border: 2px solid #f44336;
+}
+
+#boton:active {
+    background-color: rgb(28, 29, 117); 
+    color: rgb(255, 255, 255); 
+    border: 2px solid #f44336;
+}
